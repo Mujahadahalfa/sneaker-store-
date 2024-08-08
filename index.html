@@ -1,0 +1,322 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>alfarebzi Store</title>
+    <style>
+      .button-beli {
+        transition: transform 0.3s ease;
+      }
+
+      .button-beli:active {
+        transform: scale(0.95); /* Mengecilkan tombol saat ditekan */
+      }
+
+      .modal-content {
+        text-align: center; /* Menambahkan style ini untuk meratakan teks ke tengah */
+      }
+
+      /* New styles for help and privacy sections */
+      #help,
+      #privacy {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- bagian sidebar -->
+    <input type="checkbox" id="check" />
+    <div class="sidebar">
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#product">products</a></li>
+        <li><a href="#testimoni">testimonial</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#help">Bantuan</a></li>
+        <li><a href="#privacy">Kebijakan Privasi</a></li>
+        <li><a href="javascript:void(0)" onclick="logout()">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- bagian header -->
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <h1><a href="">sneakerstore</a></h1>
+        </div>
+        <div class="header-right">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product">products</a></li>
+            <li><a href="#testimoni">testimonial</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li class="profile-menu">
+              <a href="#profile"><i class="fas fa-user-circle"></i> Profile</a>
+              <div class="profile-dropdown">
+                <a href="#help"><i class="fas fa-question-circle"></i> Bantuan</a>
+                <a href="#privacy"><i class="fas fa-lock"></i> Kebijakan Privasi</a>
+                <!-- <a href="javascript:void(0)" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a> -->
+              </div>
+            </li>
+          </ul>
+
+          <!-- menu mobile -->
+          <label for="check" class="mobile-menu"><i class="fas fa-bars fa-2x"></i></label>
+        </div>
+      </div>
+    </header>
+
+    <!-- bagian banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="banner-left">
+          <h2>
+            HAI....<br />
+            BUTUH SNEAKERS <span class="efek-ngetik"></span>
+          </h2>
+          <p>Di SneackersStore Aja</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian about -->
+    <section id="about">
+      <div class="container">
+        <h3>About</h3>
+        <p>
+          Sepatu dari toko kami dirancang untuk mempermudah segala aktivitas pada setiap kegiatan yang dilakukan terutama di luar ruangan. Tidak hanya itu, kami menginspirasi semua kalangan untuk mengubah setiap mimpi mereka hanya dengan
+          melangkah dan berjalan dengan sepatu kets ini.
+        </p>
+        <p>
+          Hampir semua orang mendedikasikan sepatu ini hanya untuk setiap kebutuhan dan keinginan. Terutama ada pada keunggulan produk sepatu kami yang di buat dengan nyaman dan mudah digunakan. Kami juga membuat pelanggan tidak lupa akan
+          ciri khas pada setiap produk andalan dalam jenjang sepatu terbaik dari setiap perkembangan zaman.
+        </p>
+      </div>
+    </section>
+
+    <!-- bagian product -->
+    <section id="product">
+      <div class="container">
+        <h3>Products</h3>
+        <div class="col-4">
+          <a href="https://www.tokopedia.com/urbansneakers-id/nike-air-jordan-1-retro-high-shadow-2-0-original-555088-035?utm_source=salinlink&utm_medium=share&utm_campaign=PDP-233973216-2465192258-210524-RKdhUE&_branch_match_id=1321456290221037139&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL8nPzi9ITclM1MvJzMvWN3cMLU52ziv29UoCANcEbHUiAAAA">
+            <img src="img/img01c.jpg" alt="Nike 01" />
+            <h2>Rp.3.799.000</h2>
+            <span> Air Jordan Retro High Shadow </span>
+            <button class="button-beli">Beli</button>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.tokopedia.com/theresellersjoy/nike-air-jordan-5-retro-raging-bulls-100-authentic-44%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dpdp-seo&ved=2ahUKEwilt7388J6GAxWTbmwGHdL0AQkQFnoECCIQAQ&usg=AOvVaw12IuyncX3EZXdL38Okh2dq">
+            <img src="img/img02.jpg" />
+            <h2>Rp.4.200.000</h2>
+            <span>Air Jordan Retro Raging Bulls</span>
+            <button class="button-beli">Beli</button>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <a href="https://www.tokopedia.com/greatkicks/nike-air-max-90-gore-tex-infrared-original-og-fd5810-101?utm_source=google&utm_medium=organic&utm_campaign=pdp-seo">
+            <img src="img/img03.jpg" />
+            <h2>Rp.3.225.000</h2>
+            <span>Nike Air MAX INFRARED ORIGINAL </span>
+            <button class="button-beli">Beli</button>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <a href="https://www.tokopedia.com/papkinsstoreid/sepatu-nike-blazer-mid-77-vintage-100-original-bnib-43?extParam=ivf%3Dtrue&src=topads">
+            <img src="img/img04.jpg" />
+            <h2>Rp.1.390.000</h2>
+            <span>Nike Blazer Vintage ORIGINAL</span>
+            <button class="button-beli">Beli</button>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <a href="https://www.tokopedia.com/southjavasneakers/nike-air-jordan-1-high-jack-cactus-x-travis-scott-premium-original?extParam=ivf%3Dfalse%26src%3Dsearch">
+            <img src="img/img05.jpg" />
+            <h2>Rp.620.000</h2>
+            <span> Air Jordan High Cactus ORIGINAL </span>
+            <button class="button-beli">Beli</button>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <a href="https://www.tokopedia.com/urbansneakers-id/nike-air-force-1-low-travis-scott-cactus-jack-cn2405-900">
+            <img src="img/img06.jpg" />
+            <h2>Rp.8.499.000</h2>
+            <span>Air Force Low Travis ORIGINAL</span>
+            <button class="button-beli">Beli</button>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <a href="https://www.tokopedia.com/faizalsport13/sepatu-skechers-go-walk-arch-fit-run-vietnam-original-skechers-pria-biru-navy-40?extParam=ivf%3Dfalse&src=topads">
+            <img src="img/skechers.jpg" />
+            <h2>Rp.410.000</h2>
+            <span>Skechers GO walk ORIGINAL</span>
+            <button class="button-beli">Beli</button>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <a href="https://www.tokopedia.com/badassical/asics-gel-lyte-xxx-modern-tokyo-original-41-5-d4e34?extParam=ivf%3Dfalse%26src%3Dsearch">
+            <img src="img/asics.jpg" />
+            <h2>Rp.2.362.500</h2>
+            <span>ASICS Modern III Tokyo ORIGINAL </span>
+            <button class="button-beli">Beli</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian testimonial -->
+    <section id="testimoni">
+      <div class="container">
+        <h3>Testimonial</h3>
+        <p></p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p class="space">4.1 average based on 254 reviews.</p>
+        <hr style="border: 3px solid #f1f1f1" />
+
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian contact dengan ikon -->
+    <section id="contact">
+      <div class="container">
+        <h3>Contact</h3>
+        <div class="col-3">
+          <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+          <p>Jl. Islmic Raya, Tangerang</p>
+        </div>
+
+        <div class="col-3">
+          <h4><i class="fas fa-envelope"></i> Email</h4>
+          <p>sneakerstore@gmail.com</p>
+        </div>
+
+        <div class="col-3">
+          <h4><i class="fas fa-phone"></i> Telphone</h4>
+          <p>+62 896 6908 6346</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Halaman Bantuan -->
+    <section id="help">
+      <div class="container">
+        <h3>Bantuan</h3>
+        <p>Apakah Anda membutuhkan bantuan? Kami di sini untuk membantu Anda.
+          Berikut adalah beberapa pertanyaan yang sering diajukan dan jawabannya:</p>
+
+        <div class="faq">
+          <h4>Bagaimana cara saya memesan produk?</h4>
+          <p>Anda dapat memesan produk dengan mengklik tombol 'Beli' pada produk yang diinginkan dan mengikuti proses checkout.</p>
+          
+          <h4>Apa metode pembayaran yang tersedia?</h4>
+          <p>Kami menerima berbagai metode pembayaran termasuk transfer bank, kartu kredit, dan pembayaran digital.</p>
+          
+          <h4>Bagaimana saya bisa melacak pesanan saya?</h4>
+          <p>Anda akan menerima nomor pelacakan melalui email setelah pesanan Anda dikirim. Gunakan nomor ini untuk melacak pesanan Anda di website kurir yang bersangkutan.</p>
+          
+          <h4>Apa kebijakan pengembalian produk?</h4>
+          <p>Produk dapat dikembalikan dalam waktu 30 hari setelah penerimaan asalkan masih dalam kondisi asli dan belum digunakan.</p>
+        </div>
+        
+        <p>Jika Anda memiliki pertanyaan lain, jangan ragu untuk menghubungi kami melalui email di <a href="mailto:sneakerstore@gmail.com">sneakerstore@gmail.com</a> atau telepon di +62 896 6908 6346.</p>
+      </div>
+    </section>
+
+    <!-- Halaman Kebijakan Privasi -->
+    <section id="privacy">
+      <div class="container">
+        <h3>Kebijakan Privasi</h3>
+        <p>Kami di SneakerStore sangat menghargai privasi Anda dan berkomitmen untuk melindungi informasi pribadi yang Anda berikan kepada kami. Berikut adalah ringkasan kebijakan privasi kami:</p>
+        
+        <ul>
+          <li><strong>Pengumpulan Informasi:</strong> Kami mengumpulkan informasi yang Anda berikan saat mendaftar, memesan, dan berpartisipasi dalam promosi kami. Informasi ini mungkin termasuk nama, alamat email, nomor telepon, dan alamat pengiriman.</li>
+          <li><strong>Penggunaan Informasi:</strong> Informasi yang kami kumpulkan digunakan untuk memproses pesanan, mengirimkan email promosi, dan meningkatkan layanan yang kami tawarkan.</li>
+          <li><strong>Perlindungan Informasi:</strong> Kami menggunakan berbagai tindakan keamanan untuk melindungi keamanan informasi Anda, termasuk enkripsi dan otentikasi.</li>
+          <li><strong>Bagi Informasi:</strong> Kami tidak menjual, menukar, atau mentransfer informasi pribadi Anda kepada pihak luar tanpa persetujuan Anda, kecuali diperlukan untuk memproses pesanan atau memenuhi kewajiban hukum.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- bagian footer -->
+    <footer>
+      <div class="container">
+        <small>Copyright &copy; 2024 - SNEAKERSTORE</small>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
